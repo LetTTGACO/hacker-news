@@ -4,11 +4,11 @@
 
 ---
 
-预览地址: <https://hacker-news.agi.li>
+预览地址: <https://hacker-news.1225751694.workers.dev>
 
-Podcast 订阅地址: <https://hacker-news.agi.li/rss.xml>
+Podcast 订阅地址: <https://hacker-news.1225751694.workers.dev/rss.xml>
 
-RSS Reader 订阅地址: <https://hacker-news.agi.li/blog.xml>
+RSS 订阅地址: <https://hacker-news.1225751694.workers.dev/blog.xml>
 
 ## 主要特性
 
@@ -50,20 +50,22 @@ pnpm install
 # .dev.vars
 NEXTJS_ENV=development
 NEXT_STATIC_HOST=http://localhost:3000/static
-OPENAI_API_KEY=your_api_key
-OPENAI_BASE_URL=https://api.openai.com/v1
-OPENAI_MODEL=gpt-4
-AUDIO_VOICE_ID=zh-CN-XiaoxiaoNeural
+JINA_KEY=
+OPENAI_API_KEY=
+OPENAI_BASE_URL=
+OPENAI_MODEL=
 ```
 
 3. 启动开发服务器:
 
 ```bash
 # 开发工作流
+pnpm opennext
 pnpm dev:workflow
 # curl "http://localhost:8787/workflow" # 手动触发工作流
 
 # 开发 Web 页面
+# 注释掉wrangler.json中的 workflows配置，然后运行
 pnpm dev
 ```
 
@@ -72,10 +74,11 @@ pnpm dev
 项目使用 Cloudflare Workers 部署:
 
 1. 创建 R2 文件存储桶, 绑定域名后，修改 `NEXT_STATIC_HOST` 变量。
-2. 创建 KV 存储空间
+2. 创建 KV 存储空间`NEXT_CACHE_WORKERS_KV`
 3. 修改 `wrangler.json` 中 KV 和 R2 的值
 
 ```bash
+# 记得恢复注释：wrangler.json中的 workflows配置
 pnpm deploy
 ```
 
@@ -83,11 +86,9 @@ pnpm deploy
 
 欢迎提交 Issue 和 Pull Request!
 
-## 赞助
+## 感谢
 
-1. [在 Telegram 关注我](https://t.me/miantiao_me)
-2. [在 𝕏 上关注我](https://404.li/x)
-3. [在 GitHub 赞助我](https://github.com/sponsors/ccbikai)
+- [Hacker News](https://github.com/ccbikai/hacker-news)
 
 ## 免责声明
 
