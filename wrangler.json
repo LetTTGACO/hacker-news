@@ -34,11 +34,11 @@
       "kv_namespaces": [
         {
           "binding": "HACKER_NEWS_KV",
-          "id": "4d458dadadea42f8b8198fe3e29f858d"
+          "id": "a102197d8add4cc5be98aae969cde797"
         },
         {
           "binding": "NEXT_CACHE_WORKERS_KV",
-          "id": "4d458dadadea42f8b8198fe3e29f858d"
+          "id": "a102197d8add4cc5be98aae969cde797"
         }
       ]
     }
@@ -59,11 +59,11 @@
   "kv_namespaces": [
     {
       "binding": "HACKER_NEWS_KV",
-      "id": "4d458dadadea42f8b8198fe3e29f858d"
+      "id": "a102197d8add4cc5be98aae969cde797"
     },
     {
       "binding": "NEXT_CACHE_WORKERS_KV",
-      "id": "4d458dadadea42f8b8198fe3e29f858d"
+      "id": "a102197d8add4cc5be98aae969cde797"
     }
   ]
   /**
