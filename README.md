@@ -76,6 +76,17 @@ pnpm dev
 1. 创建 R2 文件存储桶, 绑定域名后，修改 `NEXT_STATIC_HOST` 变量。
 2. 创建 KV 存储空间`NEXT_CACHE_WORKERS_KV`
 3. 修改 `wrangler.json` 中 KV 和 R2 的值
+4. wrangler 配置环境变量
+
+```bash
+wrangler secret put JINA_KEY # 用于 Jina.ai 搜索
+wrangler secret put OPENAI_API_KEY
+wrangler secret put OPENAI_BASE_URL
+wrangler secret put OPENAI_MODEL # 模型名称，如 gpt-3.5-turbo
+wrangler secret put NEXT_STATIC_HOST # 绑定域名后，修改为绑定域名
+wrangler secret put NEXTJS_ENV # development or production
+
+```
 
 ```bash
 # 记得恢复注释：wrangler.json中的 workflows配置
