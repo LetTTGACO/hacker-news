@@ -42,7 +42,7 @@ export default function RootLayout({
               <Rss className="w-6 h-6 font-bold" />
             </a>
             <a
-              href="https://github.com/ccbikai/hacker-news"
+              href="https://github.com/LetTTGACO/hacker-news"
               className="text-zinc-700 hover:text-zinc-900 transition-colors ml-2"
               title="GitHub"
               target="_blank"
