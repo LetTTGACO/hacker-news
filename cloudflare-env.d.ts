@@ -15,4 +15,5 @@ interface CloudflareEnv {
 	HACKER_NEWS_R2: R2Bucket;
 	ASSETS: Fetcher;
 	HACKER_NEWS_WORKFLOW: Workflow;
+  WECHAT_WEBHOOK:string;
 }
