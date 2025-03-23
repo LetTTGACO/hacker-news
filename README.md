@@ -4,11 +4,11 @@
 
 ---
 
-预览地址: <https://hacker-news.1225751694.workers.dev>
+预览地址: <https://hacker-news.1874.run>
 
-Podcast 订阅地址: <https://hacker-news.1225751694.workers.dev/rss.xml>
+Podcast 订阅地址: <https://hacker-news.1874.run/rss.xml>
 
-RSS 订阅地址: <https://hacker-news.1225751694.workers.dev/blog.xml>
+RSS 订阅地址: <https://hacker-news.1874.run/blog.xml>
 
 ## 主要特性
 
