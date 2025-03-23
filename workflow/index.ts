@@ -161,11 +161,16 @@ export class HackerNewsWorkflow extends WorkflowEntrypoint<CloudflareEnv, Params
         return 'OK'
       })
       console.info('save content to kv success')
-      // 微信消息推送
-      fetch(`${this.env.WECHAT_WEBHOOK}HackNews每日播报生成成功`).catch()
+      await step.do('send message to wechat', retryConfig, async () => {
+        await fetch(`${this.env.WECHAT_WEBHOOK}HackNews每日播报生成成功`).catch()
+        return 'OK'
+      })
     }
     catch (e) {
-      fetch(`${this.env.WECHAT_WEBHOOK}HackNews每日播报生成失败`).catch()
+      await step.do('send message to wechat', retryConfig, async () => {
+        await fetch(`${this.env.WECHAT_WEBHOOK}HackNews每日播报生成失败`).catch()
+        return 'OK'
+      })
       throw e
     }
   }

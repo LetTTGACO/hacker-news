@@ -12,8 +12,8 @@ interface CloudflareEnv {
 	OPENAI_API_KEY: string;
 	OPENAI_BASE_URL: string;
 	OPENAI_MODEL: string;
+	WECHAT_WEBHOOK: string;
 	HACKER_NEWS_R2: R2Bucket;
 	ASSETS: Fetcher;
 	HACKER_NEWS_WORKFLOW: Workflow;
-  WECHAT_WEBHOOK:string;
 }
