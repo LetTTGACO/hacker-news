@@ -15,7 +15,10 @@
     "opennext": "opennextjs-cloudflare",
     "preview": "npm run -s opennext && wrangler dev --env nextjs",
     "deploy": "npm run -s opennext && WRANGLER_BUILD_PLATFORM=node wrangler deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "set-api-key": "wrangler secret put OPENAI_API_KEY",
+    "set-base-url": "wrangler secret put OPENAI_BASE_URL",
+    "set-model": "wrangler secret put OPENAI_MODEL"
   },
   "dependencies": {
     "@ai-sdk/openai-compatible": "^0.1.11",
